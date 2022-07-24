@@ -1,54 +1,72 @@
 :root{
-    --deepGreen: #283D3B;
-    --grey: #242d2d;
-    --bone: #EDDDD4;
-    --red: #C44536;
-    --maroon: #772E25;
+    --primary: #614cab;
+    --secondary: #262626;
+    --darker: #141414;
+    --text: #e5e5e5;
 }
 
 body{
     margin: 0;
-    background-color: var(--bone);
+    color: var(--text);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .header{
     display: flex;
-    background-color: darkslategray;
-    height: 150px;
-    box-shadow: 0px 5px 20px darkslategray;
-    z-index: 10;
+    background-color: var(--secondary);
+    height: 60px;
 }
 .image-section{
+    width: 100%;
     height: 500px;
-    background-color: var(--maroon);
+    background-color: #614cab;
+    background-image: url("/../Images/background.jpg");
 }
-.background-image{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.body-section{
-    height: 1500px;
-    background-color: var(--grey);
-    box-shadow: 0px -5px 20px var(--grey);
 
-    padding-top: 100px;
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 500px 500px;
-    column-gap: 150px;
-    row-gap: 150px;
-    align-items: center;
-    justify-content: center;
-}
-.body-window{
-    background-color: var(--maroon);
+.body-section{
     width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.414);
-    border-radius: 40px;
+    height: 1000px;
+    background-color: var(--secondary);
 }
 .bottom-section{
-    height: 150px;
-    background-color: rgb(23, 23, 23);
-    box-shadow: 0px -3px 2px rgb(23, 23, 23);
+    display: flex;
+    background-color: var(--darker);
+    height: 120px;
+    box-shadow: 0px -5px 10px #1414147d;
+}
+.first-text-div{
+    background-color: var(--secondary);
+    padding-left: 200px;
+    font-size: xx-large;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+.grid-area{
+    background-color: var(--secondary);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-around;
+}
+.grid-panel{
+    background-color: var(--secondary);
+    width: 100%;
+    height: 400px;
+}
+.grid-panel-image{
+    background-color: #614cab;
+    display: block;
+    width: 100%;
+    height: 350px;
+}
+.grid-panel-text{
+    text-align: center;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    font-size: x-large;
+    margin: 0;
 }
