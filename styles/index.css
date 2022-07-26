@@ -8,12 +8,38 @@
 body{
     margin: 0;
     color: var(--text);
+    background-color: var(--secondary);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr{
+    color: rgb(191, 159, 255);
+    height: 10px;
+    background-color: rgb(191, 159, 255);
+    margin-bottom: 50px;
 }
 .header{
     display: flex;
     background-color: var(--secondary);
     height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+.header-left-section{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 180px;
+    width: 400px;
+}
+.header-right-section{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 180px;
+    width: 300px;
 }
 .image-section{
     width: 100%;
@@ -24,7 +50,7 @@ body{
 
 .body-section{
     width: 100%;
-    height: 1000px;
+    margin-bottom: 100px;
     background-color: var(--secondary);
 }
 .bottom-section{
@@ -38,7 +64,7 @@ body{
     padding-left: 200px;
     font-size: xx-large;
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     height: 80px;
     align-items: center;
 }
@@ -49,11 +75,19 @@ body{
     grid-template-columns: 300px 300px 300px;
     justify-content: space-around;
 }
+.grid-area-wide{
+    background-color: var(--secondary);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: space-around;
+}
 .grid-panel{
     background-color: var(--secondary);
     width: 100%;
     height: 400px;
 }
+
 .grid-panel-image{
     background-color: #614cab;
     display: block;
