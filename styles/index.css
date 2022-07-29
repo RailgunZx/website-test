@@ -9,7 +9,8 @@ body{
     margin: 0;
     color: var(--text);
     background-color: var(--secondary);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Bebas Neue', Impact;
+    font-size: 100%;
 }
 hr{
     color: rgb(191, 159, 255);
@@ -23,7 +24,7 @@ hr{
     height: 60px;
     flex-direction: row;
     justify-content: space-between;
-    font-size: larger;
+    font-size: 2em;
 }
 .header-left-section{
     background-color: transparent;
@@ -62,11 +63,11 @@ hr{
 .first-text-div{
     background-color: var(--secondary);
     padding-left: 200px;
-    font-size: xx-large;
+    font-size: 2.5em;
     display: flex;
-    /*width: 100%;*/
     height: 80px;
     align-items: center;
+
 }
 .grid-area{
     background-color: var(--secondary);
@@ -101,6 +102,6 @@ hr{
     justify-content: center;
     align-items: center;
     background-color: var(--secondary);
-    font-size: x-large;
+    font-size: 2em;
     margin: 0;
 }
